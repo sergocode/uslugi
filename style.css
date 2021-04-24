@@ -1,0 +1,292 @@
+/*Animation Starts Here*/
+
+button,
+.button-sub,
+span,
+.notification,
+input, body {
+  transition: all .3s ease-in-out;
+}
+
+.active {
+  animation: shake 200ms 2 linear;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(6px, 0);
+  }
+  50% {
+    transform: translate(-6px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+/*Animation Ends Here*/
+
+
+/*Page Styles Starts Here*/
+
+body {
+  background-color: #e5f3fd;
+}
+
+body.active {
+  background-color: #fdc4c4;
+}
+
+button,
+.button-sub,
+p,
+a,
+input {
+  font-family: 'Open Sans';
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 258px;
+  color: #333;
+}
+
+input.active {
+  background-color: #fdfce1;
+  border: 1px solid #bd0000;
+  color: #bd0000;
+}
+
+input,
+button,
+.button-sub {
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+button,
+.button-sub {
+  text-decoration: none;
+  font-size: 18px;
+  outline: none;
+  background-color: #007ba3;
+  color: #FFF;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px solid #044682;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover, .button-sub:hover {
+  background-color: #3b8ad2;
+}
+
+button.active, .button-sub.active {
+  background-color: #bd0000;
+  border: 1px solid #910101;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.submit,
+.button,
+.error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 16px auto;
+}
+
+.error {
+  left: 110%;
+}
+
+.active .submit {
+  left: -140%;
+}
+
+.active .button {
+  left: -140%;
+}
+
+.active .error {
+  left: 0;
+}
+
+.notification {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #fdfce1;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  top: -100%;
+  width: 100%;
+}
+
+.notification.active {
+  top: 0;
+}
+
+.notification div {
+  max-width: 990px;
+  margin: auto;
+}
+
+.notification p,
+.notification a {
+  display: inline-block;
+  color: #bd0000;
+}
+
+.notification a {
+  position: relative;
+  top: -5px;
+  left: 5px;
+}
+
+.notification span:before,
+.notification span:after {
+  position: absolute;
+  content: '';
+  width: 14px;
+  height: 1px;
+  background-color: #999;
+  display: block;
+}
+
+.notification span:before {
+  transform: rotate(45deg);
+}
+
+.notification span:after {
+  transform: rotate(-45deg);
+}
+
+.cabinet-button:hover, .shake:hover {
+  cursor: pointer;
+}
+
+span.session-message {
+    margin: 20px 0 0 0;
+    background: red;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button, .button-sub {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button.cabinet-button {
+  font-weight: bold;
+  margin: 20px 0 0 0;
+}
+div.fixed {
+  display: none;
+  background: #fff;
+  z-index: 2;
+  position: fixed;
+  left: 40%;
+  top: 40%; 
+  margin-left: -10%;
+  margin-top: -10%;
+  width: 40%;
+  height: 100px;
+  border-radius: 10px;
+  border: solid green 1px;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+button.zapros {
+  background-color: green !important;
+  border: 1px solid #910101;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+button.del-zayavki {
+  margin-top: 0;
+}
+
+.fixed-request {
+  display: none;
+  position: fixed;
+  left: 40%;
+  top: 20%;
+  z-index: 5;
+  background: #fff;
+  border-radius: 10px;
+  width: 40%;
+  margin-left: -10%;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.fixed-request button {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.flex {
+  height: fit-content;
+}
+
+select {
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+textarea {
+  max-width: 300px;
+  max-height: 400px;
+  resize: none;
+  width: 100%;
+  height: 50px;
+}
+.shake.button-sub {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.shake.button-sub span {
+  margin-left: 38% !important;
+}
