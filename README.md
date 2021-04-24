@@ -1,1 +1,1 @@
-# uslugi
+![Иллюстрация к проекту](https://github.com/sergocode/uslugi/blob/main/prev.gif)
